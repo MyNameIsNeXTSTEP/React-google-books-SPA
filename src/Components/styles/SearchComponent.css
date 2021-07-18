@@ -1,0 +1,58 @@
+body {margin: 0;}
+* {box-sizing: border-box;}
+
+.main-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  background-image: url('/src/assets/backgroundImage.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  position: relative;
+  top: -5%;
+  font-size: 8vh;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.search-settings {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: wrap;
+  width: 50vw;
+  height: 50%;
+}
+
+.selectors {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 3em;
+  width: 85vw;
+}
+
+.selectors > .dropdown-selector {
+  width: 10rem;
+  height: 1.5em;
+  background: white;
+  font-size: 1.125rem;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.selectors > .dropdown-selector:focus {
+  outline: none;
+}

@@ -1,2 +1,2 @@
-# React-google-books-SPA
-Test solving
+# books-finder
+Сайт для поиска книг через гугл АПИ. 

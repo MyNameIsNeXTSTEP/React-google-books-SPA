@@ -1,0 +1,51 @@
+.formSearchBar {
+    position: relative;
+    width: 85vw;
+    height: 3em;
+    padding: 0;
+    margin: 0;
+    min-width: 30vw;
+    max-width: 50vw;
+}
+
+.formSearchBar .searchBar-input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: white;
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 1.125rem;
+}
+
+.formSearchBar .searchBar-input:focus {
+    outline: none;
+  }
+
+.formSearchBar .search-button {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    bottom: 2.5rem;
+    float: right;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: visible;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-image {
+    position: relative;
+    width: 1.9em;
+    height: 2em;
+}

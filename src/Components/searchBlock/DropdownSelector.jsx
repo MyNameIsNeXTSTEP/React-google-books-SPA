@@ -1,13 +1,13 @@
-import React, { memo } from 'react'
+import React, { memo, useMemo } from 'react'
+import '../styles/DropdownSelector.css'
 
 function DropdownSelector({ options, setFiltersState, filterName }) {
 
-  const optionsList = options.map(item =>
-    ({ value: item, label: item, key: item }))
-  
-  const OptionComponents = optionsList.map((option) => (
-    <option key = { option.key}  value = { option.value }>{ option.label }</option>
-  ))
+  const optionsList = useMemo(() => (
+    options.map(item =>(
+      { value: item, label: item}
+      ))
+    ), [options])
 
   const handleOnChange = (e) => {
 		const selectedValue = e.target.value
@@ -20,11 +20,13 @@ function DropdownSelector({ options, setFiltersState, filterName }) {
 
   return (
     <select
-      className="dropdown-selector"
-			onChange={handleOnChange}
-			>
-				{OptionComponents}
-		</select>
+    className="dropdown-selector"
+    onChange={handleOnChange}
+    >
+      {optionsList.map(({ value, label }) => (
+        <option key={value} value={value}>{label}</option>
+      ))}
+    </select>
   )
 }
 

@@ -1,0 +1,182 @@
+.modal-detailed-view {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 1000;
+  width: 90%;
+  height: 80%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-detailed-view .image-table {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(238, 238, 238);
+}
+
+.modal-detailed-view .image-table img {
+  position: relative;
+  width: 55%;
+  height: 80%;
+  min-width: 25vh;
+  min-height: 35vh;
+  top: 10%;
+  left: 20%;
+  box-shadow: 10px 10px 20px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 321px) {
+  .modal-detailed-view .image-table img {
+    top: 25%;
+    left: 10%;
+    width: 55%;
+    height: 50%;
+    min-width: 120px;
+    min-height: 140px;
+  }
+}
+
+.modal-detailed-view .info {
+  position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin: 0;
+  top: 10%;
+  right: 2%;
+  width: 47%;
+  height: 80%;
+  overflow: initial;
+}
+
+@media(max-width: 700px) {
+  .modal-detailed-view .info {
+    top: 5%;
+    height: 80%;
+    overflow: scroll;
+  }
+}
+
+.modal-detailed-view .info .category {
+  position: relative;
+  color: darkgray;
+  text-decoration: underline;
+  font-size: 2vw;
+  left: 5%;
+  top: -10%;
+}
+
+.modal-detailed-view .info .title {
+  position: relative;
+  font-weight: 800;
+  font-size: 1vw;
+  left: 5%;
+  top: -5%;
+}
+
+.modal-detailed-view .info .authors {
+  position: relative;
+  color: darkgray;
+  margin-bottom: 3vh;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 1vw;
+  left: 5%;
+  top: 2%;
+}
+
+.modal-detailed-view .info .description {
+  position: relative;
+  padding: 0;
+  margin: 2vh;
+  font-size: 2vh;
+  border: 1px black solid;
+  overflow: scroll;
+}
+
+.modal-detailed-view .close-button {
+  position: relative;
+  text-decoration: none;
+  background: darkgray;
+  border-radius: 5px;
+  top: -5%;
+  left: 97%;
+  width: 50px;
+  height: 20px;
+}
+
+.modal-detailed-view .close-button:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 320px) {
+  .modal-detailed-view .info {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    overflow: auto;
+  }
+  .modal-detailed-view .info .category {
+    font-size: 2vw;
+    top: 7%;
+  }
+  .modal-detailed-view .info .title {
+    font-size: 2vw;
+    top: 10%;
+  }
+  .modal-detailed-view .info .authors {
+    font-size: 2vw;
+    top: 15%;
+  }
+  .modal-detailed-view .info .description {
+    top: 15%;
+    font-size: 2vw;
+    width: auto;
+  }
+}
+
+@media(max-width: 700px) {
+  .modal-detailed-view .info .category {
+    font-size: 1.5vw;
+    top: 7%;
+  }
+  .modal-detailed-view .info .title {
+    font-size: 1.5vw;
+    top: 10%;
+  }
+  .modal-detailed-view .info .authors {
+    font-size: 1.5vw;
+    top: 15%;
+  }
+  .modal-detailed-view .info .description {
+    top: 15%;
+    font-size: 1.5vw;
+    width: auto;
+  }
+  .modal-detailed-view .close-button {
+    font-size: 1.5vh;
+    max-width: 35px;
+    max-height: 15px;
+  }
+}

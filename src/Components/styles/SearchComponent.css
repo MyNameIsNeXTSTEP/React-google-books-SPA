@@ -27,21 +27,39 @@ h1 {
 
 .search-settings {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: wrap;
   width: 50vw;
-  height: 50%;
+  height: auto;
 }
 
 .selectors {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 3em;
+  align-items: center;
+  margin: 3em 8em 0 8em ;
   width: 85vw;
+}
+
+@media(max-width: 1235px){
+  .selectors > .dropdown-selector {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media(max-width: 550px){
+  .selectors {
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+  .selectors > .dropdown-selector {
+    margin-top: 2em;
+  }
 }
 
 .selectors > .dropdown-selector {

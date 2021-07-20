@@ -1,11 +1,29 @@
 .formSearchBar {
     position: relative;
     width: 85vw;
-    height: 3em;
+    height: 3rem;
     padding: 0;
     margin: 0;
     min-width: 30vw;
     max-width: 50vw;
+}
+
+@media (max-width: 1235px) {
+    .formSearchBar {
+        min-width: 630px;
+    }
+}
+
+@media (max-width: 880px) {
+    .formSearchBar {
+        min-width: 420px;
+    }
+}
+
+@media (max-width: 460px) {
+    .formSearchBar {
+        min-width: 280px;
+    }
 }
 
 .formSearchBar .searchBar-input {
@@ -26,7 +44,7 @@
 
 .formSearchBar .searchBar-input:focus {
     outline: none;
-  }
+}
 
 .formSearchBar .search-button {
     position: relative;
@@ -36,7 +54,7 @@
     float: right;
     width: 2.5em;
     height: 2.5em;
-    background-color: Transparent;
+    background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     overflow: visible;
